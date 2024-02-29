@@ -1,2 +1,3 @@
-# blog_template
-Deno Fresh Blog Template
+
+This template was made via [this tutorial](https://deno.com/blog/build-a-blog-with-fresh).
+
