@@ -10,6 +10,7 @@ export interface Post {
   snippet: string;
   content: string;
   disableHtmlSanitization: boolean;
+  allowMath: boolean;
 }
 
 // Get posts.
@@ -36,5 +37,6 @@ export async function getPost(slug: string): Promise<Post | null> {
     content: body,
     snippet: attrs.snippet,
     disableHtmlSanitization: attrs.disable_html_sanitization,
+    allowMath: attrs.allow_math,
   };
 }
