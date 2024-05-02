@@ -18,6 +18,7 @@ export async function getPosts(): Promise<Post[]> {
   const files = Deno.readDir(DIRECTORY);
   const promises = [];
   for await (const file of files) {
+    if (file.name.startsWith(".")) continue;
     const slug = file.name.replace(".md", "");
     promises.push(getPost(slug));
   }
