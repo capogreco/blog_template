@@ -31,6 +31,7 @@ export default function PostPage(props: PageProps<Post>) {
             day: "numeric",
           })}
         </time>
+        <a href="/" class="block mt-4 text-blue-500">← Back to home</a>
         <div
           class="mt-8 markdown-body"
           dangerouslySetInnerHTML={{ __html: render(post.content, {
