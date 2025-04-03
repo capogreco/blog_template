@@ -48,7 +48,7 @@ Visit [ $\KaTeX$ ](https://katex.org/docs/supported#fractions-and-binomials) for
 
 </script>
 
-## Embedding p5 sketches:
+## Embedding p5 online editor sketches:
 
 <iframe id="falling_falling" src="https://editor.p5js.org/capogreco/full/Fkg05m7aA"></iframe>
 
@@ -94,4 +94,23 @@ Visit [ $\KaTeX$ ](https://katex.org/docs/supported#fractions-and-binomials) for
     draw_frame ()
 </script>
 
+## example p5.js sketch:
 
+<script src="./scripts/p5.js"></script>
+
+<canvas id="p5_example"></canvas>
+
+<script>
+    const cnv = document.getElementById ("p5_example")
+
+    function setup () {
+        const w = cnv.parentNode.scrollWidth
+        const h = w * 9 / 16
+        createCanvas (w, h, P2D, cnv)
+    }
+
+    function draw () {
+        background (`turquoise`)
+        console.log (frameCount)
+    }
+</script>
