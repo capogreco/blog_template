@@ -24,8 +24,40 @@ Hyperlinks can be written like this: `[text](https://URL)`
 
 You can find a markdown cheat-sheet [here](https://www.markdownguide.org/cheat-sheet/).
 
-## Maths:
+## Codeblocks
 
+Like this:
+
+```js
+function setup () {
+    createCanvas (640, 360)
+}
+
+function draw () {
+    background (`turquoise`)
+    // etc.
+}
+```
+... can be written like this:
+
+
+````markdown
+```js
+function setup () {
+    createCanvas (640, 360)
+}
+
+function draw () {
+    background (`turquoise`)
+    // etc.
+}
+```
+````
+
+The `js` at the top ^ gives the codeblock javascript syntax highlighting.  Replace it with `html` for HTML syntax highlighting, etc.
+
+
+## Maths
 ... which can be written inline, like this: $\{ x, y, z \} \in \N$
 
 ... or block, like this:
@@ -34,7 +66,7 @@ $$ x^2 + y^2 = z^2 $$
 
 Visit [ $\KaTeX$ ](https://katex.org/docs/supported#fractions-and-binomials) for more information about writing maths.
 
-## Embedding video:
+## Embedded video
 
 <iframe id="coding_train_video" src="https://www.youtube.com/embed/rI_y2GAlQFM?si=RDgjkpunxk1mQzMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -48,7 +80,7 @@ Visit [ $\KaTeX$ ](https://katex.org/docs/supported#fractions-and-binomials) for
 
 </script>
 
-## Embedding p5 online editor sketches:
+## Embedded p5 online editor sketch
 
 <iframe id="falling_falling" src="https://editor.p5js.org/capogreco/full/Fkg05m7aA"></iframe>
 
@@ -79,7 +111,7 @@ Visit [ $\KaTeX$ ](https://katex.org/docs/supported#fractions-and-binomials) for
         ctx.fillStyle = `turquoise`
         ctx.fillRect (0, 0, cnv.width, cnv.height)
 
-        ctx.fillStyle = `hotpink`
+        ctx.fillStyle = `deeppink`
         ctx.fillRect (pos.x, pos.y, 100, 100)
 
         pos.x += 2
@@ -94,23 +126,36 @@ Visit [ $\KaTeX$ ](https://katex.org/docs/supported#fractions-and-binomials) for
     draw_frame ()
 </script>
 
-## example p5.js sketch:
+## Canvas API + p5.js
 
 <script src="./scripts/p5.js"></script>
-
 <canvas id="p5_example"></canvas>
 
 <script>
     const cnv = document.getElementById ("p5_example")
+    const w = cnv.parentNode.scrollWidth
+    const h = w * 9 / 16
 
     function setup () {
-        const w = cnv.parentNode.scrollWidth
-        const h = w * 9 / 16
         createCanvas (w, h, P2D, cnv)
+        noStroke ()
+    }
+
+    const pos = {
+        x: -100,
+        y: h / 2 - 50
     }
 
     function draw () {
         background (`turquoise`)
-        console.log (frameCount)
+
+        fill (`deeppink`)
+        square (pos.x, pos.y, 100)
+
+        pos.x += 2
+
+        if (pos.x > w) {
+            pos.x = -100
+        }
     }
 </script>
