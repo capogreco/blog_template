@@ -1,0 +1,42 @@
+/* Light mode variables */
+:root {
+  --color-primary          : turquoise;
+  --color-secondary        : #e5e7eb;
+  --color-background       : #ffffff;
+  --color-foreground       : #111827;
+  --color-muted            : #e5e7eb;
+  --color-muted-foreground : #6b7280;
+  --color-accent           : #f3f4f6;
+  --color-accent-foreground: #1f2937;
+}
+
+/* Dark mode variables */
+.dark {
+  --color-primary          : deeppink;
+  --color-secondary        : #374151;
+  --color-background       : #0e1117;
+  --color-foreground       : #f9fafb;
+  --color-muted            : #374151;
+  --color-muted-foreground : #9ca3af;
+  --color-accent           : #1f2937;
+  --color-accent-foreground: #f3f4f6;
+}
+
+/* Base styles */
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme toggle button styles */
+button[aria-label*="Switch to"] {
+  transition: all 0.2s ease-in-out;
+}
+button[aria-label*="Switch to"]:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+.dark button[aria-label*="Switch to"] svg {
+  color: #ffffff;
+}
