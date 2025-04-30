@@ -25,7 +25,7 @@ export default function PostPage(props: PageProps<Post>) {
         <style dangerouslySetInnerHTML={{ __html: KATEX_CSS }} />
       </Head>
       
-      <main class="max-w-screen-md px-4 pt-16 mx-auto">
+      <main class="max-w-screen-md px-4 pt-16 mx-auto pb-16">
         <div class="flex justify-between items-center">
           <h1 class="text-5xl font-bold">{post.title}</h1>      
           <ThemeToggle />
@@ -47,7 +47,6 @@ export default function PostPage(props: PageProps<Post>) {
         <div class="flex justify-end items-center mt-8">
           <HomeButton />
         </div>
-        
       </main>
     </>
   );

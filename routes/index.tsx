@@ -12,7 +12,7 @@ export const handler: Handlers<Post[]> = {
 export default function BlogIndexPage(props: PageProps<Post[]>) {
   const posts = props.data;
   return (
-    <main class="max-w-screen-md px-4 pt-16 mx-auto">
+    <main class="max-w-screen-md px-4 pt-16 mx-auto pb-16">
       <div class="flex justify-between items-center">
         <h1 class="text-5xl font-bold">Blog</h1>
         <ThemeToggle />
