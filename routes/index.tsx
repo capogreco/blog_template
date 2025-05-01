@@ -14,7 +14,7 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
   return (
     <main class="max-w-screen-md px-4 pt-16 mx-auto pb-16">
       <div class="flex justify-between items-center">
-        <h1 class="text-5xl font-bold">Blog</h1>
+        <h1 class="text-5xl" style="font-family: 'Clarity City', sans-serif; font-weight: 900;">Blog Template 2.0</h1>
         <ThemeToggle />
       </div>
       <div class="mt-8">

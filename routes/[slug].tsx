@@ -2,8 +2,9 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
 import { getPost, Post } from "@/utils/posts.ts";
 import { CSS, KATEX_CSS, render } from "$gfm";
-import ThemeToggle from "../islands/ThemeToggle.tsx";
-import HomeButton from "../components/HomeButton.tsx";
+import ThemeToggle from "@/islands/ThemeToggle.tsx";
+import HomeButton from "@/components/HomeButton.tsx";
+import CodeBlockToggle from "@/islands/CodeBlockToggle.tsx";
 
 export const handler: Handlers<Post> = {
   async GET(_req, ctx) {
@@ -25,9 +26,9 @@ export default function PostPage(props: PageProps<Post>) {
         <style dangerouslySetInnerHTML={{ __html: KATEX_CSS }} />
       </Head>
       
-      <main class="max-w-screen-md px-4 pt-16 mx-auto pb-16">
+      <main class="max-w-screen-md px-4 pt-16 mx-auto pb-16 bg-transparent">
         <div class="flex justify-between items-center">
-          <h1 class="text-5xl font-bold">{post.title}</h1>      
+          <h1 class="text-5xl font-sans font-bold">{post.title}</h1>      
           <ThemeToggle />
         </div>
         <time class="text-muted-foreground">
@@ -44,6 +45,7 @@ export default function PostPage(props: PageProps<Post>) {
             allowMath: post.allowMath,
           }) }}
         />
+        <CodeBlockToggle />
         <div class="flex justify-end items-center mt-8">
           <HomeButton />
         </div>

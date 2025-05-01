@@ -15,6 +15,12 @@ export default {
         accent: "var(--color-accent)",
         "accent-foreground": "var(--color-accent-foreground)",
       },
+      fontFamily: {
+        sans: ["Atkinson Hyperlegible", "sans-serif"],
+        serif: ["IBM Plex Serif", "serif"],
+        mono: ["Fira Code", "monospace"],
+        clarity: ["Clarity City", "sans-serif"],
+      },
     },
   },
 } as Options;

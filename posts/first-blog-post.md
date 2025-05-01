@@ -33,7 +33,7 @@ function setup () {
     createCanvas (640, 360)
 }
 
-function draw () {
+const draw = () => {
     background (`turquoise`)
     // etc.
 }
@@ -47,7 +47,7 @@ function setup () {
     createCanvas (640, 360)
 }
 
-function draw () {
+const draw = () => {
     background (`turquoise`)
     // etc.
 }

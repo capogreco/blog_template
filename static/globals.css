@@ -1,3 +1,54 @@
+/* Sans-serif font declarations (Clarity City) */
+@font-face {
+  font-family: 'Clarity City';
+  src: url('/fonts/Clarity_City/ClarityCity-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Monospace font declarations (Fira Code) */
+@font-face {
+  font-family: 'Fira Code';
+  src: url('/fonts/Fira_Code/FiraCode-VF.woff2') format('woff2-variations');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Accessibility font declarations (Atkinson Hyperlegible) */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  src: url('/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  src: url('/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  src: url('/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  src: url('/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* Light mode variables */
 :root {
   --color-primary          : turquoise;
@@ -24,6 +75,7 @@
 
 /* Base styles */
 body {
+  font-family: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--color-background);
   color: var(--color-foreground);
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -39,4 +91,39 @@ button[aria-label*="Switch to"]:focus {
 }
 .dark button[aria-label*="Switch to"] svg {
   color: #ffffff;
+}
+
+/* Code block styles */
+.code-block-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.code-block-container pre {
+  margin-top: 0 !important;
+  font-family: 'Fira Code', monospace !important;
+}
+
+.markdown-body pre code {
+  font-family: 'Fira Code', monospace !important;
+}
+
+/* Main text in markdown */
+.markdown-body {
+  font-family: 'Atkinson Hyperlegible', sans-serif !important;
+}
+
+.ligature-toggle {
+  z-index: 10;
+  transition: opacity 0.2s ease-in-out;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--color-accent);
+  color: var(--color-accent-foreground);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0.7;
+  cursor: pointer;
 }
