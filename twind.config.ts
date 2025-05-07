@@ -18,7 +18,7 @@ export default {
       fontFamily: {
         sans: ["Atkinson Hyperlegible", "sans-serif"],
         serif: ["IBM Plex Serif", "serif"],
-        mono: ["Fira Code", "monospace"],
+        mono: ["GeistMono", "monospace"],
         clarity: ["Clarity City", "sans-serif"],
       },
     },

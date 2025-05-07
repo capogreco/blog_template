@@ -1,129 +1,203 @@
 /* Sans-serif font declarations (Clarity City) */
 @font-face {
-  font-family: 'Clarity City';
-  src: url('/fonts/Clarity_City/ClarityCity-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Clarity City";
+    src: url("/fonts/Clarity_City/ClarityCity-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Monospace font declarations (Fira Code) */
 @font-face {
-  font-family: 'Fira Code';
-  src: url('/fonts/Fira_Code/FiraCode-VF.woff2') format('woff2-variations');
-  font-weight: 300 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Fira Code";
+    src: url("/fonts/Fira_Code/FiraCode-VF.woff2") format("woff2-variations");
+    font-weight: 300 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Accessibility font declarations (Atkinson Hyperlegible) */
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Atkinson Hyperlegible";
+    src: url("/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Regular-102a.woff2")
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Atkinson Hyperlegible";
+    src: url("/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Italic-102a.woff2")
+        format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Atkinson Hyperlegible";
+    src: url("/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-Bold-102a.woff2")
+        format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  src: url('/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2') format('woff2');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Atkinson Hyperlegible";
+    src: url("/fonts/Atkinson-Hyperlegible/Atkinson-Hyperlegible-BoldItalic-102a.woff2")
+        format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Monospace font declarations (GeistMono) */
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono/GeistMono-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono/GeistMono-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono/GeistMono-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono/GeistMono-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono/GeistMono-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono/GeistMono-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono/GeistMono-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono/GeistMono-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "GeistMono";
+    src: url("/fonts/GeistMono/GeistMono-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Light mode variables */
 :root {
-  --color-primary          : turquoise;
-  --color-secondary        : #e5e7eb;
-  --color-background       : #ffffff;
-  --color-foreground       : #111827;
-  --color-muted            : #e5e7eb;
-  --color-muted-foreground : #6b7280;
-  --color-accent           : #f3f4f6;
-  --color-accent-foreground: #1f2937;
+    --color-primary: turquoise;
+    --color-secondary: #e5e7eb;
+    --color-background: #ffffff;
+    --color-foreground: #111827;
+    --color-muted: #e5e7eb;
+    --color-muted-foreground: #6b7280;
+    --color-accent: #f3f4f6;
+    --color-accent-foreground: #1f2937;
 }
 
 /* Dark mode variables */
 .dark {
-  --color-primary          : deeppink;
-  --color-secondary        : #374151;
-  --color-background       : #0e1117;
-  --color-foreground       : #f9fafb;
-  --color-muted            : #374151;
-  --color-muted-foreground : #9ca3af;
-  --color-accent           : #1f2937;
-  --color-accent-foreground: #f3f4f6;
+    --color-primary: deeppink;
+    --color-secondary: #374151;
+    --color-background: #0e1117;
+    --color-foreground: #f9fafb;
+    --color-muted: #374151;
+    --color-muted-foreground: #9ca3af;
+    --color-accent: #1f2937;
+    --color-accent-foreground: #f3f4f6;
 }
 
 /* Base styles */
 body {
-  font-family: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: var(--color-background);
-  color: var(--color-foreground);
-  transition: background-color 0.3s ease, color 0.3s ease;
+    font-family:
+        "Atkinson Hyperlegible",
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
 /* Theme toggle button styles */
 button[aria-label*="Switch to"] {
-  transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 button[aria-label*="Switch to"]:focus {
-  outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
 }
 .dark button[aria-label*="Switch to"] svg {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 /* Code block styles */
 .code-block-container {
-  position: relative;
-  margin-bottom: 1rem;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
 .code-block-container pre {
-  margin-top: 0 !important;
-  font-family: 'Fira Code', monospace !important;
+    margin-top: 0 !important;
+    font-family: "GeistMono", monospace !important;
 }
 
 .markdown-body pre code {
-  font-family: 'Fira Code', monospace !important;
+    font-family: "GeistMono", monospace !important;
 }
-
 /* Main text in markdown */
 .markdown-body {
-  font-family: 'Atkinson Hyperlegible', sans-serif !important;
+    font-family: "Atkinson Hyperlegible", sans-serif !important;
 }
 
 .ligature-toggle {
-  z-index: 10;
-  transition: opacity 0.2s ease-in-out;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: var(--color-accent);
-  color: var(--color-accent-foreground);
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  opacity: 0.7;
-  cursor: pointer;
+    z-index: 10;
+    transition: opacity 0.2s ease-in-out;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: var(--color-accent);
+    color: var(--color-accent-foreground);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0.7;
+    cursor: pointer;
 }
